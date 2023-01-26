@@ -1,0 +1,33 @@
+.container {
+    overflow-x: auto;
+}
+
+.container__header {
+    text-align: center;
+}
+
+.container__table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.container__headerTable {
+    background-color: #468e97;
+    color: white
+}
+
+.container__caption {
+    caption-side: bottom;
+    text-align: right;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.container__tableRow:hover {
+    background-color: #d9d9d9;
+}
+
+.container__tableCell {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 12px;
+}

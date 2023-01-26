@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.result {
+    margin: 20px 0 40px;
+    text-align: center;
+    font-weight: 400;
+}

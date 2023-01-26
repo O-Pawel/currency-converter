@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznik walut</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <h1 class="header">
+        Kantor internetowy
+    </h1>
+
+    <form class="form js-form">
+        <h2 class="form__header">
+            Kalkulator walutowy
+        </h2>
+        <fieldset>
+            <legend class="form__legend">Wypełnij dane</legend>
+            <p>Chcę:</p>
+            <ul class="list">
+                <li class="form__listItem">
+                    <label>
+                        <input class="form__input  js-radio1" type="radio" name="action" value="buy" checked>kupić
+                    </label>
+                </li>
+                <li class="form__listItem">
+                    <label>
+                        <input class="form__input" type="radio" name="action" value="sell">sprzedać
+                    </label>
+                </li>
+            </ul>
+            <p>
+                <label>
+                    <span class="form__labelText">Waluta:</span>
+                    <select class="form__field js-currency">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="CHF">CHF</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span class="form__labelText">Ilość:</span> <input class="form__field js-amount" required
+                        type="number" min="0.01" step="0.01">
+                </label>
+            </p>
+        </fieldset>
+        <p>
+            <button class="form__button">Przelicz</button>
+        </p>
+    </form>
+    <p class="result js-result"></p>
+
+    <div class="container">
+        <h2 class="container__header">Aktualne kursy walut</h2>
+        <table class="container__table">
+            <caption class="container__caption">2023.01.17</caption>
+            <tr class="container__tableRow">
+                <th class="container__tableCell container__headerTable" scope="col">Symbol</th>
+                <th class="container__tableCell container__headerTable" scope="col">Nazwa waluty</th>
+                <th class="container__tableCell container__headerTable" scope="col">Skup</th>
+                <th class="container__tableCell container__headerTable" scope="col">Sprzedaż</th>
+            </tr>
+            <tr class="container__tableRow">
+                <th class="container__tableCell container__headerTable" scope="row">EUR</th>
+                <td class="container__tableCell">Euro</td>
+                <td class="container__tableCell">4.68 zł</td>
+                <td class="container__tableCell">4.71 zł</td>
+            </tr>
+            <tr class="container__tableRow">
+                <th class="container__tableCell container__headerTable" scope="row">USD</th>
+                <td class="container__tableCell">Dolar</td>
+                <td class="container__tableCell">4.33 zł</td>
+                <td class="container__tableCell">4.36 zł</td>
+            </tr>
+            <tr class="container__tableRow">
+                <th class="container__tableCell container__headerTable" scope="row">GBP</th>
+                <td class="container__tableCell">Funt</td>
+                <td class="container__tableCell">5.28 zł</td>
+                <td class="container__tableCell">5.31 zł</td>
+            </tr>
+            <tr class="container__tableRow">
+                <th class="container__tableCell container__headerTable" scope="row">CHF</th>
+                <td class="container__tableCell">Frank</td>
+                <td class="container__tableCell">4.68 zł</td>
+                <td class="container__tableCell">4.71 zł</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>
