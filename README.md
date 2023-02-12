@@ -1,17 +1,16 @@
-# currency-conventer - small project after 4 module
-![Pawel](images/pawel.jpg "Pawel")
-
-***
-
-## Demo
-
-[currency-conventer](https://o-pawel.github.io/currency-converter/)
-
-***
+# currency-conventer --- small project after 4 module
 
 ## Description
 
-**Lorem _ipsum_** est
+This is a simple currency converter between the Polish currency and a few other major currencies.
 
-**Lorem _ipsum_** est
-**Lorem _ipsum_** est
+## Demo
+
+![website](images/screenshot01.jpg "website")
+
+[currency-conventer](https://o-pawel.github.io/currency-converter/)
+
+## About author
+
+![Pawel](images/pawel.jpg "Pawel")
+
