@@ -5,7 +5,7 @@
 
 ## Demo
 
-[currency-conventer](https://o-pawel.github.io/currency-conventer/)
+[currency-conventer](https://o-pawel.github.io/currency-converter/)
 
 ***
 
