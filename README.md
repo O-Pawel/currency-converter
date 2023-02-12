@@ -6,7 +6,7 @@ This is a simple currency converter between the Polish currency and a few other 
 
 ## Demo
 
-![website](images/screenshot01.jpg "website")
+![website](images/screenshot02.jpg "website")
 
 [currency-conventer](https://o-pawel.github.io/currency-converter/)
 
