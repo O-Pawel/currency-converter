@@ -13,6 +13,7 @@ body {
     color: #222;
     font-family: 'Montserrat', sans-serif;
     background-color: #f7f7f7;
+    background-image: url("../images/euro.jpg");
 }
 
 .header {
