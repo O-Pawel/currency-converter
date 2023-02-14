@@ -12,7 +12,7 @@ If you want to use it:
 
 ## Demo
 
-![website](images/screenshot02.jpg "website")
+![website](images/screenshot.jpg "website")
 
 [currency-conventer](https://o-pawel.github.io/currency-converter/)
 
