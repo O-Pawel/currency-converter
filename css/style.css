@@ -12,14 +12,15 @@ body {
     padding: 0 20px;
     color: #222;
     font-family: 'Montserrat', sans-serif;
-    background-color: hsla(0, 0%, 100%, 0);
-    background-image: url("../images/euro.jpg");
+    background-color: white;
+    background-image: url("../images/euro01.jpg");
 }
 
 .header {
     text-align: center;
     margin-bottom: 30px;
     color: #ffffff;
+    font-size: 56px;
 }
 
 .result {
