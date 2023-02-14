@@ -5,10 +5,10 @@
 This is a simple currency converter between the Polish currency and a few other major currencies.
 
 If you want to use it:
-1. choose **buy** (*kupić*) or **sell** (*sprzedać*)
-2. choose currency (*waluta*)
-3. enter amount
-4. press the button **Przelicz**
+1. Choose **buy** (*kupić*) or **sell** (*sprzedać*).
+2. Choose currency (*waluta*).
+3. Enter amount.
+4. Press the button **Przelicz**.
 
 ## Demo
 
