@@ -1,5 +1,6 @@
 .container {
     overflow-x: auto;
+    background-color: #b4aaaa;
 }
 
 .container__header {

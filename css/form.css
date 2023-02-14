@@ -1,6 +1,8 @@
 .form {
     max-width: 420px;
     margin: 40px auto;
+    padding: 10px 20px;
+    background-color: #b4aaaa;
 }
 
 .form__header {
