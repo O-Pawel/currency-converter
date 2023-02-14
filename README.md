@@ -7,7 +7,7 @@ This is a simple currency converter between the Polish currency and a few other 
 If you want to use it:
 1. Choose **buy** (*kupić*) or **sell** (*sprzedać*).
 2. Choose **currency** (*waluta*).
-3. Enter **amount**(*ilość*).
+3. Enter **amount** (*ilość*).
 4. Press the button **Przelicz**.
 
 ## Demo
