@@ -1,49 +1,69 @@
-let radioElement1 = document.querySelector(".js-radio1");
-let currencyElement = document.querySelector(".js-currency");
-let amountElement = document.querySelector(".js-amount");
-let formElement = document.querySelector(".js-form");
-let resultElement = document.querySelector(".js-result");
+{
+    const calculateBuy = (amount, currency) => {
+        const rateBuyEUR = 4.71;
+        const rateBuyUSD = 4.36;
+        const rateBuyGBP = 5.31;
+        const rateBuyCHF = 4.71;
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    let currency = currencyElement.value;
-
-    let amount = +amountElement.value;
-
-    let result;
-
-    if (radioElement1.checked === true) {
         switch (currency) {
             case "EUR":
-                result = amount * 4.71;
-                break;
+                return amount * rateBuyEUR;
             case "USD":
-                result = amount * 4.36;
-                break;
+                return amount * rateBuyUSD;
             case "GBP":
-                result = amount * 5.31;
-                break;
+                return amount * rateBuyGBP;
             case "CHF":
-                result = amount * 4.71;
-                break;
+                return amount * rateBuyCHF;
         }
-        resultElement.innerHTML = `Kwota jaką musisz zapłacić za ${amount} ${currency} wynosi: <strong>${result.toFixed(2)} zł</strong>`;
-    } else {
-        switch (currency) {
-            case "EUR":
-                result = amount * 4.68;
-                break;
-            case "USD":
-                result = amount * 4.33;
-                break;
-            case "GBP":
-                result = amount * 5.28;
-                break;
-            case "CHF":
-                result = amount * 4.68;
-                break;
-        }
-        resultElement.innerHTML = `Kwota jaką otrzymasz za ${amount} ${currency} wynosi: <strong>${result.toFixed(2)} zł</strong>`;
     }
-});
+
+    const calculateSell = (amount, currency) => {
+        const rateSellEUR = 4.68;
+        const rateSellUSD = 4.33;
+        const rateSellGBP = 5.28;
+        const rateSellCHF = 4.68;
+
+        switch (currency) {
+            case "EUR":
+                return amount * rateSellEUR;
+            case "USD":
+                return amount * rateSellUSD;
+            case "GBP":
+                return amount * rateSellGBP;
+            case "CHF":
+                return amount * rateSellCHF;
+        }
+    }
+
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+        const currencyElement = document.querySelector(".js-currency");
+        const amountElement = document.querySelector(".js-amount");
+        const resultElement = document.querySelector(".js-result");
+        const radioElement1 = document.querySelector(".js-radio1"); 
+
+        const currency = currencyElement.value;
+        const amount = +amountElement.value;
+
+        if (radioElement1.checked === true) {
+
+            let result = calculateBuy(amount, currency);
+
+            resultElement.innerHTML = `Kwota jaką musisz zapłacić za ${amount} ${currency} wynosi: <strong>${result.toFixed(2)} zł</strong>`;
+        } else {
+            let result = calculateSell(amount, currency);
+        
+            resultElement.innerHTML = `Kwota jaką otrzymasz za ${amount} ${currency} wynosi: <strong>${result.toFixed(2)} zł</strong>`;
+        }
+    }
+
+    const init = () => {
+
+        const formElement = document.querySelector(".js-form");
+
+        formElement.addEventListener("submit", onFormSubmit);
+    }
+
+    init();
+}
