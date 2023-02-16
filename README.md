@@ -16,6 +16,13 @@ If you want to use it:
 
 [currency-conventer](https://o-pawel.github.io/currency-converter/)
 
+## Technolohies used in this project:
+- HTML
+- CSS
+- JS 
+- BEM
+
 ## About author
 
 ![Pawel](images/pawel.jpg "Pawel")
+I am currently working as a teacher, but I would like to change my job. I'm trying as much as I can, although it's not easy.
