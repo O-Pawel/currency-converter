@@ -16,13 +16,6 @@ body {
     background-image: url("../images/euro.jpg");
 }
 
-.header {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #ffffff;
-    font-size: 56px;
-}
-
 .result {
     color: rgb(0, 0, 0);
     margin: 20px 0 40px;
