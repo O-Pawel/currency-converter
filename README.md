@@ -25,4 +25,5 @@ If you want to use it:
 ## About author
 
 ![Pawel](images/pawel.jpg "Pawel")
+
 I am currently working as a teacher, but I would like to change my job. I'm trying as much as I can, although it's not easy.
